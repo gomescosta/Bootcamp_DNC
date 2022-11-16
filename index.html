@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,500&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet" >
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootcamp DNC </title>
-    <style>
-       
-    </style>
+
 </head>
+
 <body>
     <nav id="menuTopo">
         <div id="iconesMenu">
@@ -19,8 +21,56 @@
         </div>
         <button>Login</button>
     </nav>
-    
-    
-    
+
+    <section>
+        <header>
+            <h1>Bootcamp DNC</h1>
+            <h2>
+                Esse será um evento exclusivo para todos os alunos<br>
+                da DNC, que querem <span class="invert">acelerar a carreira</span>  com uma <br>
+                semana intensiva de conteúdo de mercado entre <br>
+                <span class="invert">BACK-END,FRONT-END & BANCO DE DADOS.</span>
+            
+            </h2>
+        </header>
+        <form action="">
+            <div class="form-group">
+                <label for="">Nome</label>
+                <input type="text" placeholder="Insira seu nome aqui">                
+            </div>
+            <div class="form-group">
+                <label for="">Sobrenome</label>
+                <input type="text" placeholder="Insira seu Sobrenome aqui">                
+            </div>
+            <div class="form-group">
+                <label for="">Área de Interesse</label>
+                <div class="check-box-itens">
+                    <input type="checkbox" value="front">
+                    <label>Front-end</label>
+
+                    <input type="checkbox" value="back">
+                    <label>back-end</label>
+
+                    <input type="checkbox" value="banco-dados">
+                    <label>Banco de dados</label>
+
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="">E-mail</label>
+                <input type="email" placeholder="Insira seu email aqui">                
+            </div>
+            <div class="form-group">
+                <label for="">Nome</label>
+                <input type="text" placeholder="(00) 9 123 456 789)">                
+            </div>
+            <div class="form-group">
+                <label for="">Insira uma frese criativa aqui</label>
+                <input type="text" placeholder="Qual frase criativa você gostaria de falar ?">                
+            </div>
+
+            <input type="submit" value="Cadastrar">
+        </form>
+    </section>
 </body>
 </html>

@@ -4,6 +4,12 @@
 body{
     margin: 0px; /*margem externa*/
     padding: 0px;/*Margem interna*/
+    background-image: linear-gradient(180deg, blue, black);
+    background-repeat: no-repeat;
+
+    font-family: "inter";
+    color: white;
+    
 }
 /*Menu Principal*/
 #menuTopo{
