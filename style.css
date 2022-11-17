@@ -1,6 +1,15 @@
 /*Importação de fonte*/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,500&display=swap');
 
+
+:root{
+    --azul-dnc: #0c70f2;
+    --preto-dnc:#303030;
+    --cinza-hover:#c9c9c9;
+
+    --fonte-padrao: 'Open Sans', sans-serif;
+}
+
 body{
     margin: 0px; /*margem externa*/
     padding: 0px;/*Margem interna*/
@@ -9,7 +18,7 @@ body{
 
     font-family: "inter";
     color: white;
-    
+
 }
 /*Menu Principal*/
 #menuTopo{
@@ -62,5 +71,93 @@ body{
         color: white;
 
         box-shadow: 3px 2px 4px rgba(12, 112, 242, 0.25);
+        cursor: pointer;
+    }
+
+    /*Seção principal*/
+
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+        margin-bottom: 100px;
+
+    }
+
+    header{
+        color: white;
+        font-family: var(--fonte-padrao);
+    }
+    header h1{
+        font-size: 80px;
+        font-weight: 800;
+        text-transform: uppercase;
+        text-align: center;
+
+        margin-bottom: 20px;
+    }
+    header h2{
+        text-align: center;
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 100px;
+    }
+
+    header .invert{
+        background-color: black;
+        font-weight: bold;
+        padding: 5px;
+    }
+
+    /*Formulario*/
+
+    form{
+        color: white;
+        font-family:var(--fonte-padrao);
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .form-group{
+        display: flex;
+        flex-direction:column;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    form input {
+        border-radius: 10px;
+        height: 30px;
+        border: 0px;
+        font-size: 20px;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+    form label{
+        margin: 2px 0px 2px 0px; 
+    }
+
+    form input::placeholder{
+        color: rgba(57, 57, 57, 0.5);
+    }
+    .check-box-itens label{
+        font-size: 25px;
+    }
+    .check-box-itens {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    input [type="checkbox"]{
+        transform: scale(1.7);
+    }
+    input[type="submit"]{
+        background-color: rgba(12, 112, 242, 0.9);
+        width: 100%;
+        height: 56px;
+        font-size: 32px;
+        color: white;
+        margin-top: 70px;
+        box-shadow:0px 6px 4px rgba(12, 112, 242, 0.25) ;
         cursor: pointer;
     }
